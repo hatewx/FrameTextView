@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.DefaultFrameTextViewStyle" parent="android:Theme">
+        <item name="frameTextViewStyle">@style/DefaultFrameTextViewStyle</item>
+    </style>
+
+
+    <style name="DefaultFrameTextViewStyle" parent="android:Widget.TextView">
+        <item name="mode">@integer/ftv_default_mode</item>
+        <item name="autoStart">@bool/ftv_default_autoStart</item>
+        <item name="from">@integer/ftv_default_fromNum</item>
+        <item name="to">@integer/ftv_default_toNum</item>
+        <item name="itemsSequence">@integer/ftv_default_itemsSequence</item>
+        <item name="colorSequence">@integer/ftv_default_colorsSequence</item>
+        <item name="scroll">@bool/ftv_default_scroll</item>
+        <item name="scrollInterpolator">@android:interpolator/linear</item>
+        <item name="scrollSpeed">@integer/ftv_default_scrollSpeed</item>
+
+        <!-- FrameAnimationTextView Attributes -->
+        <item name="interpolator">@android:interpolator/linear</item>
+        <item name="duration">@integer/ftv_default_duration</item>
+        <item name="repeatMode">@integer/ftv_default_repeatMode</item>
+        <item name="repeatCount">@integer/ftv_default_repeatCount</item>
+
+        <!-- FrameIntervalTextViewStyle Attributes -->
+        <item name="interval">@integer/ftv_default_interval</item>
+        <item name="amount">@integer/ftv_default_amount</item>
+    </style>
+</resources>

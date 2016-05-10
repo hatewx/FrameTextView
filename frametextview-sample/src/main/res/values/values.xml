@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="clockFrom">
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+    </integer-array>
+
+    <integer-array name="clockTo">
+        <item>24</item>
+        <item>24</item>
+        <item>24</item>
+    </integer-array>
+
+    <integer-array name="zeroFrom">
+        <item>0</item>
+    </integer-array>
+
+    <integer-array name="hundredTo">
+        <item>100</item>
+    </integer-array>
+
+    <integer-array name="ftv_colorItems">
+        <item>@color/green</item>
+        <item>@color/accent</item>
+        <item>@color/cyan</item>
+    </integer-array>
+
+    <integer-array name="ftv_colorItems1">
+        <item>@color/accent_20_translucent</item>
+        <item>@color/accent</item>
+    </integer-array>
+
+    <color name="green">#4CAF50</color>
+    <color name="accent">#FF5252</color>
+    <color name="accent_20_translucent">#20FF5252</color>
+    <color name="cyan">#00BCD4</color>
+</resources>

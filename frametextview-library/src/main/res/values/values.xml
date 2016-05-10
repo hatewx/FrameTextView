@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="frametextview_app_name">FrameTextView</string>
+    <string name="frametextview_author">Shawn Wang</string>
+
+    <bool name="ftv_default_autoStart">false</bool>
+    <bool name="ftv_default_scroll">false</bool>
+
+    <integer name="ftv_default_mode">0</integer>
+    <integer name="ftv_default_duration">@android:integer/config_longAnimTime</integer>
+    <integer name="ftv_default_startDelay">0</integer>
+    <integer name="ftv_default_fromNum">0</integer>
+    <integer name="ftv_default_toNum">0</integer>
+    <integer name="ftv_default_repeatMode">1</integer>
+    <integer name="ftv_default_repeatCount">0</integer>
+    <integer name="ftv_default_itemsSequence">0</integer>
+    <integer name="ftv_default_colorsSequence">0</integer>
+    <integer name="ftv_default_interval">1000</integer>
+    <integer name="ftv_default_amount">0</integer>
+    <integer name="ftv_default_scrollSpeed">0</integer>
+
+
+</resources>

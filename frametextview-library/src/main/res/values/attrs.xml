@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+
+    <declare-styleable name="FrameTextView">
+        <attr name="mode" format="enum">
+            <enum name="interpolated" value="0" />
+            <enum name="interval" value="1" />
+        </attr>
+        <attr name="autoStart" format="boolean" />
+        <attr name="startDelay" format="integer" />
+        <attr name="from" format="integer|string" />
+        <attr name="to" format="integer|string" />
+        <attr name="textItems" format="reference" />
+        <attr name="itemsSequence" format="enum">
+            <enum name="asc" value="0" />
+            <enum name="desc" value="1" />
+            <enum name="random" value="2" />
+        </attr>
+        <attr name="format" format="string" />
+        <attr name="colorItems" format="reference" />
+        <attr name="colorSequence" format="enum">
+            <enum name="asc" value="0" />
+            <enum name="desc" value="1" />
+            <enum name="random" value="2" />
+            <enum name="gradual" value="3" />
+        </attr>
+        <attr name="scroll" format="boolean" />
+        <attr name="scrollInterpolator" format="reference" />
+        <attr name="scrollSpeed" format="enum">
+            <enum name="low" value="0" />
+            <enum name="medium" value="1" />
+            <enum name="high" value="2" />
+        </attr>
+
+        <!-- Interpolated mode, take effect when {mode} is interpolated -->
+        <attr name="duration" format="integer" />
+        <attr name="interpolator" format="reference" />
+        <attr name="repeatCount" format="integer" />
+        <attr name="repeatMode" format="enum">
+            <enum name="restart" value="1" />
+            <enum name="reverse" value="2" />
+        </attr>
+
+        <!-- Interval mode, take effect when {mode} is interval -->
+        <attr name="interval" format="integer" />
+        <attr name="amount" format="integer" />
+    </declare-styleable>
+
+    <attr name="frameTextViewStyle" format="reference" />
+
+</resources>

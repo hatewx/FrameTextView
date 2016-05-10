@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="ftv_default_textColors">
+        <item>@color/green</item>
+        <item>@color/accent</item>
+        <item>@color/cyan</item>
+    </integer-array>
+    <attr format="reference" name="frameTextViewStyle"/>
+    <bool name="ftv_default_autoStart">false</bool>
+    <color name="accent">#FF5252</color>
+    <color name="cyan">#00BCD4</color>
+    <color name="green">#4CAF50</color>
+    <declare-styleable name="FrameAnimationTextView"><attr format="integer" name="duration"/><attr format="reference" name="interpolator"/><attr format="integer" name="repeatCount"/><attr format="enum" name="repeatMode"><enum name="restart" value="1"/><enum name="reverse" value="2"/></attr></declare-styleable>
+    <declare-styleable name="FrameIntervalTextView"><attr format="integer" name="interval"/><attr format="integer" name="count"/></declare-styleable>
+    <declare-styleable name="FrameTextView"><attr format="boolean" name="autoStart"/><attr format="integer" name="startDelay"/><attr format="reference" name="from"/><attr format="reference" name="to"/><attr format="reference" name="textItems"/><attr format="enum" name="itemsSequence"><enum name="asce" value="0"/><enum name="desc" value="1"/><enum name="random" value="2"/></attr><attr format="string" name="format"/><attr format="reference" name="textColors"/><attr format="enum" name="colorSequence"><enum name="asce" value="0"/><enum name="desc" value="1"/><enum name="random" value="2"/><enum name="gradual" value="3"/></attr></declare-styleable>
+    <integer name="ftv_default_colorsSequence">0</integer>
+    <integer name="ftv_default_count">0</integer>
+    <integer name="ftv_default_duration">@android:integer/config_longAnimTime</integer>
+    <integer name="ftv_default_fromNum">0</integer>
+    <integer name="ftv_default_interval">1000</integer>
+    <integer name="ftv_default_itemsSequence">0</integer>
+    <integer name="ftv_default_repeatCount">0</integer>
+    <integer name="ftv_default_repeatMode">1</integer>
+    <integer name="ftv_default_startDelay">0</integer>
+    <integer name="ftv_default_toNum">0</integer>
+    <string name="app_name">FrameTextView-library</string>
+    <string name="frametextview_app_name">FrameTextView</string>
+    <string name="frametextview_author">Shawn Wang</string>
+    <style name="DefaultFrameTextViewStyle" parent="android:Widget.TextView">
+        <item name="autoStart">@bool/ftv_default_autoStart</item>
+        <item name="from">@integer/ftv_default_fromNum</item>
+        <item name="to">@integer/ftv_default_toNum</item>
+        <item name="itemsSequence">@integer/ftv_default_itemsSequence</item>
+        <item name="textColors">@array/ftv_default_textColors</item>
+        <item name="colorSequence">@integer/ftv_default_colorsSequence</item>
+
+        <!-- FrameAnimationTextView Attributes -->
+        <item name="interpolator">@android:interpolator/linear</item>
+        <item name="duration">@integer/ftv_default_duration</item>
+        <item name="repeatMode">@integer/ftv_default_repeatMode</item>
+        <item name="repeatCount">@integer/ftv_default_repeatCount</item>
+
+        <!-- FrameIntervalTextViewStyle Attributes -->
+        <item name="interval">@integer/ftv_default_interval</item>
+        <item name="count">@integer/ftv_default_count</item>
+    </style>
+    <style name="Theme.DefaultFrameTextViewStyle" parent="android:Theme">
+        <item name="frameTextViewStyle">@style/DefaultFrameTextViewStyle</item>
+    </style>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4CAF50</color>
+    <color name="colorPrimaryDark">#2E7D32</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="apptheme_accent">#eeff41</color>
+    <color name="apptheme_accent_translucent">#70eeff41</color>
+
+    <color name="simple_item_background_pressed">#15000000</color>
+</resources>
