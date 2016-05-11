@@ -1,4 +1,4 @@
-package in404.com.frametextview;
+package com.in404.frametextview.samples;
 
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -96,18 +96,6 @@ public class MainActivity extends AppCompatActivity
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
-
-    /*
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        return super.onOptionsItemSelected(item);
-    }
-    */
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override

@@ -1,2 +1,2 @@
-include ':frametextview-sample', ':frametextview-library', ':lib'
+include ':frametextview-sample', ':frametextview-library'
 

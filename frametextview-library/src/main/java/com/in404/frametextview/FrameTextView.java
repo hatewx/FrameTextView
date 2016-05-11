@@ -287,6 +287,11 @@ public class FrameTextView extends AppCompatTextView {
 
     }
 
+    /**
+     * Start render TextView
+     * {#valueAnimator} will be started if in {#INTERPOLATED_MODE}
+     * {#runnable} will be started if in {#INTERVAL_MODE}
+     */
     public void start() {
         if (this.isNeedInit && !init()) return;
 
@@ -298,7 +303,9 @@ public class FrameTextView extends AppCompatTextView {
 
     }
 
-
+    /**
+     * Stop render
+     */
     public void stop() {
         if (mode == INTERPOLATED_MODE) {
             this.valueAnimator.cancel();
@@ -316,7 +323,6 @@ public class FrameTextView extends AppCompatTextView {
      */
     @Override
     public void onDraw(Canvas canvas) {
-        Log.i(TAG, "onDraw");
         if (!this.scroll) {
             // Call super onDraw() method directly.
             super.onDraw(canvas);
@@ -368,6 +374,11 @@ public class FrameTextView extends AppCompatTextView {
     }
 
 
+    /**
+     * init {#valueAnimator}, {#runnable}, {#textProvider}, {#colorProvider}
+     * or update them while params changed
+     * @return
+     */
     public boolean init() {
         if (!checkParameters()) return false;
 
@@ -676,7 +687,17 @@ public class FrameTextView extends AppCompatTextView {
     }
 
     /**
+     * TextProvider provide data when FrameTextView is rendering.
+     * getData(float interpolation) should be implemented if in {#INTERPOLATED_MODE},
+     *   interpolation of {#valueAnimator} will be delivered.
+     * else getData(int count) should be implemented if in {#INTERVAL_MODE}
+     *   count(executed time of {#runnable}) will be delivered.
      *
+     * @return an array of Object should be return,
+     *   if array ["A+", "B" ,"A-"] is returned,
+     *     if you got a {#format} "Math:%1$s, English:%2$s, Physics:%3$s",
+     *       FrameTextView render as text "Math:A+, English:B, Physics:A-".
+     *     if {#format} is null, FrameTextView render as text "A+BA-"
      */
     public interface TextProvider {
         Object[] getData(float interpolation);
@@ -684,15 +705,14 @@ public class FrameTextView extends AppCompatTextView {
     }
 
     private class DefaultTextProvider implements TextProvider {
-
-
         CharSequence textCs;
         int startIndex, endIndex;
         int fromNum, toNum;
         int diff;
 
         public DefaultTextProvider() {
-            setDifArray();
+            if (getTextItems() == null)
+                setDifArray();
         }
 
         @Override
@@ -755,9 +775,10 @@ public class FrameTextView extends AppCompatTextView {
 
             if ((getFrom() != null && getFrom().type == TypedValue.TYPE_STRING)
                     || (getTo() != null && getTo().type == TypedValue.TYPE_STRING)) {
-                CharSequence fromCs = getFrom() == null && getFrom().string == null
+                CharSequence fromCs = (getFrom() == null || getFrom().string == null)
                         ? "" : getFrom().string;
-                CharSequence toCs = getTo() == null && getTo().string == null ? "" : getTo().string;
+                CharSequence toCs = (getTo() == null || getTo().string == null)
+                        ? "" : getTo().string;
                 textCs = fromCs.length() > toCs.length() ? fromCs : toCs;
                 Log.i(TAG, "textCs:" + textCs);
                 startIndex = fromCs.length() - 1;
@@ -769,13 +790,23 @@ public class FrameTextView extends AppCompatTextView {
                 diff = toNum - fromNum;
             }
 
+            if (mode == INTERVAL_MODE && amount <= 0)
+                amount = diff;
+
         }
 
     }
 
+    /**
+     * ColorProvider provide color of text when FrameTextView is rendering.
+     * getColor(float interpolation) should be implemented if in {#INTERPOLATED_MODE},
+     *   interpolation of {#valueAnimator} will be delivered.
+     * else getColor(int count) should be implemented if in {#INTERVAL_MODE}
+     *   count(executed time of {#runnable}) will be delivered.
+     */
     public interface ColorProvider {
-        int getColor(int count);
         int getColor(float interpolation);
+        int getColor(int count);
     }
 
     public class DefaultColorProvider implements ColorProvider {
@@ -809,7 +840,7 @@ public class FrameTextView extends AppCompatTextView {
 
         @Override
         public int getColor(int count) {
-            return getColor(-1);
+            return getColor(1.0f);
         }
 
         @Override

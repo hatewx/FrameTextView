@@ -35,4 +35,137 @@
     <color name="accent">#FF5252</color>
     <color name="accent_20_translucent">#20FF5252</color>
     <color name="cyan">#00BCD4</color>
+
+    <string-array name="countries">
+        <item>Hong Kong</item>
+        <item>Macao</item>
+        <item>China</item>
+        <item>North Korea</item>
+        <item>Japan</item>
+        <item>P.O.Korea</item>
+        <item>Vietnam</item>
+        <item>Laos</item>
+        <item>Kampuchea</item>
+        <item>Burma</item>
+        <item>Thailand</item>
+        <item>Malaysia</item>
+        <item>Singapore</item>
+        <item>the Philippines</item>
+        <item>Indonesia</item>
+        <item>East Timor</item>
+        <item>Brunei Darussalam</item>
+        <item>Kazakstan</item>
+        <item>Uzbekstan</item>
+        <item>Tsjikistan</item>
+        <item>Afghanistan</item>
+        <item>Pakistan</item>
+        <item>Nepal</item>
+        <item>Bhutan</item>
+        <item>India</item>
+        <item>Bangladesh</item>
+        <item>Sri Lanka</item>
+        <item>Maldives</item>
+        <item>Iran</item>
+        <item>Iraq</item>
+        <item>Kuwait</item>
+        <item>Sandi Arabia</item>
+        <item>Bahrain</item>
+        <item>Qatar</item>
+        <item>Oman</item>
+        <item>Democratic Yemen</item>
+        <item>Jordan</item>
+        <item>Israel</item>
+        <item>Syria</item>
+        <item>Lebanon</item>
+        <item>Cyprus</item>
+        <item>Turkey</item>
+        <item>Azerbaijan</item>
+        <item>Georgia</item>
+        <item>Armenia</item>
+        <item>Ghana</item>
+        <item>Togo</item>
+        <item>Benin</item>
+        <item>the Niger</item>
+        <item>Nigeria</item>
+        <item>St . Helena</item>
+        <item>Cameroon</item>
+        <item>Chad</item>
+        <item>Gabon</item>
+        <item>the Congo</item>
+        <item>Zaire</item>
+        <item>Angola</item>
+        <item>Sudan</item>
+        <item>Libya</item>
+        <item>Tunisia</item>
+        <item>Algeria</item>
+        <item>Morocco</item>
+        <item>Iceland</item>
+        <item>Denmark</item>
+        <item>Norway</item>
+        <item>Sweden</item>
+        <item>Finland</item>
+        <item>Estonia</item>
+        <item>Latvia</item>
+        <item>Lithuania</item>
+        <item>Ireland</item>
+        <item>United Kingdom</item>
+        <item>France</item>
+        <item>Netherlands</item>
+        <item>Belgium</item>
+        <item>Luxembourg</item>
+        <item>Germany</item>
+        <item>Austria</item>
+        <item>Switzerland</item>
+        <item>Liechtenstein</item>
+        <item>Portugal</item>
+        <item>Spain</item>
+        <item>Andorra</item>
+        <item>Monaco</item>
+        <item>Italy</item>
+        <item>Vatican</item>
+        <item>Malta</item>
+        <item>Sand Marino</item>
+        <item>Greece</item>
+        <item>USSR(formerly)</item>
+        <item>Russia</item>
+        <item>White Russia</item>
+        <item>Ukraine</item>
+        <item>Poland</item>
+        <item>Czech Republic</item>
+        <item>Slovakia</item>
+        <item>Hungary</item>
+        <item>Slovene</item>
+        <item>Kosovo</item>
+        <item>Croatia</item>
+        <item>Yugoslavia</item>
+        <item>Montenegro</item>
+        <item>Albania</item>
+        <item>Romania</item>
+        <item>Bulgaria</item>
+        <item>Moldavia</item>
+        <item>Australia</item>
+        <item>New Aealand</item>
+        <item>New Caledonia</item>
+        <item>Mariana Is.</item>
+        <item>Kiribati</item>
+        <item>Marshall Islands</item>
+        <item>Palau</item>
+        <item>Guam</item>
+        <item>Micronesia</item>
+        <item>Solomon Islands</item>
+        <item>Figi</item>
+        <item>Naura</item>
+        <item>Tonga</item>
+        <item>Niue</item>
+        <item>Cook Island</item>
+        <item>Eastern Samoa</item>
+        <item>Western Samoa</item>
+        <item>Tuvalu</item>
+        <item>Tokela</item>
+        <item>Greenland</item>
+        <item>Canada</item>
+        <item>America</item>
+        <item>Bermuda</item>
+        <item>Mexico</item>
+    </string-array>
 </resources>

@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="in404.com.frametextview.MainActivity"
+    tools:context=".MainActivity"
     tools:showIn="@layout/app_bar_main">
 
     <android.support.v4.widget.SwipeRefreshLayout
@@ -168,7 +168,7 @@
                             app:format="%1$s"
                             app:mode="interpolated"
                             app:autoStart="true"
-                            app:duration="1300"
+                            app:duration="5300"
                             app:from="100"
                             app:to="1"
                             app:colorSequence="gradual"
@@ -180,33 +180,83 @@
 
                 </LinearLayout>
 
-                <!--
-                <com.in404.frametextview.FrameTextView
-                    android:layout_marginTop="100dp"
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="16sp"
-                    app:mode="interval"
-                    app:autoStart="true"
-                    app:from="0"
-                    app:to="200"
-                    app:interval="@android:integer/config_shortAnimTime"
-                    app:colorSequence="gradual"
-                    app:colorItems="@array/ftv_colorItems"/>
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/default_margin">
 
-                <com.in404.frametextview.FrameTextView
-                    android:layout_width="wrap_content"
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="05"
+                        android:layout_marginRight="@dimen/default_margin"
+                        style="@style/NoText"/>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/default_margin"
+                        android:background="@drawable/rounded_stroke_primary">
+
+                        <com.in404.frametextview.FrameTextView
+                            android:id="@+id/ftv_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="30sp"
+                            android:layout_gravity="center"
+                            app:mode="interval"
+                            app:autoStart="true"
+                            app:amount="20"
+                            app:interval="200"
+                            app:textItems="@array/countries"
+                            app:itemsSequence="random"
+                            app:colorSequence="asc"
+                            app:colorItems="@array/ftv_colorItems" />
+
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@android:color/black"
-                    android:text="hello motherfucker"
-                    android:textSize="26sp"
-                    app:mode="interval"
-                    app:autoStart="true"
-                    app:from=""
-                    app:to="hello motherfucker"
-                    app:colorSequence="gradual"
-                    app:colorItems="@array/ftv_colorItems"/>
-                    -->
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/default_margin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="06"
+                        android:layout_marginRight="@dimen/default_margin"
+                        style="@style/NoText"/>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/default_margin"
+                        android:background="@drawable/rounded_stroke_primary">
+
+                        <com.in404.frametextview.FrameTextView
+                            android:id="@+id/ftv_6"
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:layout_gravity="center"
+                            android:textStyle=""
+                            app:mode="interval"
+                            app:autoStart="true"
+                            app:interval="100"
+                            app:to="@string/android"
+                            app:colorSequence="asc"
+                            app:itemsSequence="random"
+                            app:interpolator="@android:interpolator/decelerate_cubic" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
 
             </LinearLayout>
 

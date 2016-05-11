@@ -1,7 +1,4 @@
-package in404.com.frametextview.utils;
-
-import android.content.Context;
-import android.graphics.Typeface;
+package com.in404.frametextview.samples.utils;
 
 /**
  * Created by shawn
