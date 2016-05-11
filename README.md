@@ -1,6 +1,6 @@
 # FrameTextView
 
-<img src="screenshots/frametextview.gif" width="400" align="right" hspace="20">
+<img src="screenshots/frametextview.gif" width="270" align="right" hspace="20">
 
 FrameTextView is a custom TextView can be interpolated or regularly rendered.  
 
