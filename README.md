@@ -5,7 +5,7 @@
 FrameTextView is a custom TextView can be interpolated or regularly rendered.  
 
 
-**custom content include:**  
+custom content include:
 
 + text content(for example: ["One", "Two", "Three"], number 1 - 100)
 
@@ -16,6 +16,7 @@ FrameTextView is a custom TextView can be interpolated or regularly rendered.
 + render time
 
 + render interval
+
 
 Not only that, FrameTextView provide abundant features allow you to custom.
 
